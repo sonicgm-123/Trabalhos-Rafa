@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.bandeira {
+    width: 750px;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+
+    background: linear-gradient(
+        150deg,
+        #c8102e 0%,
+        #c8102e 40%,
+        #f5d000 40%,
+        #f5d000 60%,
+        #009b3a 60%,
+        #009b3a 100%
+    );
+}
+
+/* Brasão */
+.brasao {
+    position: absolute;
+
+    width: 470px;
+    height: 470px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -48%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brasao img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

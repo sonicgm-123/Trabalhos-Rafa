@@ -1,0 +1,27 @@
+/*   
+  body{
+    width: 100%;
+  }
+   */
+  
+  div{
+width: 400px;
+height: 400px;
+background-image: url(imagens/rs.jpg);
+background-size: cover;
+/* background-repeat: no-repeat; */
+background-position: 0%;
+border: outset 3px rgb(255, 0, 0);
+border-radius: 50%;
+
+  }
+ 
+  p{
+    color: rgb(255, 0, 0);
+    padding-top: 50px;
+    padding-left: 40%;
+    
+
+  }
+
+  
