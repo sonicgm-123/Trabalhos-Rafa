@@ -1,0 +1,30 @@
+  body {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.coracao {
+    font-size: 800px;
+       font-size: 100px;
+    animation: pulsar 0.8s infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
