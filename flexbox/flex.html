@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade Flexbox</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 30px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        header {
+            background: #2994f5;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 4px #1766c9;
+        }
+
+        .conteudo {
+            display: flex;
+            gap: 15px;
+        }
+
+        main {
+            background: #40ad78;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            box-shadow: 0 3px 4px #278653;
+        }
+
+        .itens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .item {
+            background: #328c62;
+            color: white;
+            width: 74px;
+            height: 65px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 4px #176443;
+            font-weight: bold;
+        }
+
+        aside {
+            background: #f21d25;
+            color: white;
+            width: 80px;
+            padding: 20px;
+            border: 4px solid #ff5555;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #4169df;
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 4px #2446ae;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <strong>header</strong>
+        </header>
+
+        <div class="conteudo">
+
+            <main>
+                <h4>main</h4>
+
+                <div class="itens">
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                    <div class="item">item</div>
+                </div>
+
+            </main>
+
+            <aside>
+                <h4>sidebar</h4>
+                
+            </aside>
+
+        </div>
+
+        <footer>
+            <strong>footer</strong>
+        </footer>
+
+    </div>
+
+</body>
+</html>
