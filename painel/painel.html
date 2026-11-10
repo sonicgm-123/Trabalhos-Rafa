@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Previsão do Tempo</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background: #f1f5f8;
+        margin: 20px;
+        color: #063477;
+    }
+
+    #painel {
+        width: 500px;
+        border: 2px solid black;
+        background: white;
+    }
+
+    .cabecalho {
+        background: #06285e;
+        color: white;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho h1 {
+        font-size: 22px;
+    }
+
+    .cabecalho p {
+        font-size: 12px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 33.33%;
+        height: 110px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.04);
+        box-shadow: 0 4px 10px gray;
+    }
+
+    .card span {
+        font-size: 14px;
+    }
+
+    .card strong {
+        font-size: 18px;
+    }
+
+    .temperatura {
+        background: #0879ed;
+    }
+
+    .umidade {
+        background: #209b38;
+    }
+
+    .vento {
+        background: #7533d5;
+    }
+
+    .condicao {
+        background: #ff8800;
+    }
+
+    .amanha {
+        background: #00a9a9;
+    }
+
+    .localizacao {
+        background: #ee3370;
+    }
+
+    .icone {
+        font-size: 30px;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="painel">
+
+    <div class="cabecalho">
+        <h1>☀ PREVISÃO DO TEMPO</h1>
+        <p>Hoje<br>Porto Alegre - RS</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card temperatura">
+            <div class="icone">☀</div>
+            <span>Temperatura</span>
+            <strong>26°C</strong>
+        </div>
+
+        <div class="card umidade">
+            <div class="icone">💧</div>
+            <span>Umidade</span>
+            <strong>65%</strong>
+        </div>
+
+        <div class="card vento">
+            <div class="icone">〰</div>
+            <span>Vento</span>
+            <strong>12 km/h</strong>
+        </div>
+
+        <div class="card condicao">
+            <div class="icone">☁</div>
+            <span>Condição</span>
+            <strong>Ensolarado</strong>
+        </div>
+
+        <div class="card amanha">
+            <div class="icone">▦</div>
+            <span>Amanhã</span>
+            <strong>25°C</strong>
+        </div>
+
+        <div class="card localizacao">
+            <div class="icone">📍</div>
+            <span>Localização</span>
+            <strong>Porto Alegre</strong>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
